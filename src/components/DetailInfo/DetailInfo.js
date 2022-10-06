@@ -1,63 +1,86 @@
 import React from "react";
+import { StyledSection } from "../WelcomePage/WelcomePage.styled";
+import { StyledContainer } from "../PersonalInfo/PersonalInfo.styled";
+import {
+  StyledContainerRadio,
+  StyledImage,
+  StyledTitleRadio,
+  StyledTitleSection,
+} from "./DetailInfo.styled";
+import ButtonRadio from "./ButtonRadio";
+import CakePiece from "../images/CakePiece.png";
 
 function DetailInfo() {
-  const article1Styles = {
-    position: "relative",
-    width: "1000px",
-    minWidth: "1000px",
-    minHeight: "600px",
-    height: "600px",
-    padding: "25px",
-    backgroundColor: "#ecf0f3",
-    boxShadow: "10px 10px 10px #d1d9e6, -10px -10px 10px #f9f9f9",
-    borderRadius: "12px",
-    overflow: "hidden",
-  };
-
-  const radioStyle = {
+  const labelStyles = {
     display: "flex",
-    flexDirection: "column",
+    alignItems: "center",
   };
-
   return (
-    <article style={article1Styles}>
-      <h2>Pick your flavor</h2>
-      <div style={radioStyle}>
-        <label>
-          <input type="radio" /> Chocolate
-        </label>
-        <label>
-          <input type="radio" /> Vanilla
-        </label>
-        <label>
-          <input type="radio" /> Strawberry
-        </label>
-        <label>
-          <input type="radio" /> Raspberry
-        </label>
-        <label>
-          <input type="radio" /> Walnut
-        </label>
-      </div>
-      <h2>Pick your decorations</h2>
-      <div style={radioStyle}>
-        <label>
-          <input type="radio" /> Fondant Icing
-        </label>
-        <label>
-          <input type="radio" /> Royal Icing
-        </label>
-        <label>
-          <input type="radio" /> Marzipan Decorations
-        </label>
-        <label>
-          <input type="radio" /> Candles
-        </label>
-        <label>
-          <input type="radio" /> Flowers
-        </label>
-      </div>
-    </article>
+    <StyledSection>
+      <StyledContainer>
+        <StyledTitleSection>PICK THE DETAILS</StyledTitleSection>
+        <StyledTitleRadio>Pick your flavor</StyledTitleRadio>
+
+        <StyledContainerRadio>
+          <ButtonRadio>
+            <ButtonRadio.Input type="radio" value="a" name="taste" id="a" />
+            <label style={labelStyles} for="a">
+              <ButtonRadio.Indicator></ButtonRadio.Indicator>
+              <ButtonRadio.Item>Chocolate</ButtonRadio.Item>
+            </label>
+          </ButtonRadio>
+          <ButtonRadio>
+            <ButtonRadio.Input type="radio" value="b" name="taste" id="b" />
+            <label style={labelStyles} for="b">
+              <ButtonRadio.Indicator></ButtonRadio.Indicator>
+              <ButtonRadio.Item>Vanilla</ButtonRadio.Item>
+            </label>
+          </ButtonRadio>
+          <ButtonRadio>
+            <ButtonRadio.Input type="radio" value="c" name="taste" id="c" />
+            <label style={labelStyles} for="c">
+              <ButtonRadio.Indicator></ButtonRadio.Indicator>
+              <ButtonRadio.Item>Strawberry</ButtonRadio.Item>
+            </label>
+          </ButtonRadio>
+          <ButtonRadio>
+            <ButtonRadio.Input type="radio" value="d" name="taste" id="d" />
+            <label style={labelStyles} for="d">
+              <ButtonRadio.Indicator></ButtonRadio.Indicator>
+              <ButtonRadio.Item>Raspberry</ButtonRadio.Item>
+            </label>
+          </ButtonRadio>
+        </StyledContainerRadio>
+        <StyledTitleRadio>Pick your decorations</StyledTitleRadio>
+        <StyledContainerRadio>
+          <ButtonRadio>
+            <ButtonRadio.Input
+              type="radio"
+              value="e"
+              name="decoration"
+              id="e"
+            />
+            <label style={labelStyles} for="e">
+              <ButtonRadio.Indicator></ButtonRadio.Indicator>
+              <ButtonRadio.Item>Fondant Icing</ButtonRadio.Item>
+            </label>
+          </ButtonRadio>
+          <ButtonRadio>
+            <ButtonRadio.Input
+              type="radio"
+              value="f"
+              name="decoration"
+              id="f"
+            />
+            <label style={labelStyles} for="f">
+              <ButtonRadio.Indicator></ButtonRadio.Indicator>
+              <ButtonRadio.Item>Royal Icing</ButtonRadio.Item>
+            </label>
+          </ButtonRadio>
+        </StyledContainerRadio>
+        <StyledImage src={CakePiece} />
+      </StyledContainer>
+    </StyledSection>
   );
 }
 

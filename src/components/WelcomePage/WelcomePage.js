@@ -20,7 +20,7 @@ function WelcomePage() {
       <StyledDivContainerRight>
         <StyledForm>
           <label>
-            Choose occasion:
+            Choose occasion
             <StyledSeclectTop>
               <option value=""></option>
               <option value="Wedding">Wedding</option>
@@ -32,7 +32,7 @@ function WelcomePage() {
         </StyledForm>
         <StyledForm>
           <label>
-            Choose size:
+            Choose size
             <StyledSelectBottom>
               <option value=""></option>
               <option value="Small">Small</option>

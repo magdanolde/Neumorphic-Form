@@ -20,7 +20,7 @@ export const StyledDivContainerLeft = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 45%;
+  width: 50%;
   height: 100%;
   padding: 25px;
   backgroundcolor: #ecf0f3;
@@ -37,7 +37,7 @@ export const StyledDivContainerRight = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  width: 40%;
+  width: 50%;
   height: 100%;
   padding: 25px;
   backgroundcolor: #ecf0f3;
@@ -50,7 +50,7 @@ export const StyledImg = styled.img`
 
 export const StyledForm = styled.form`
   font-size: 1.5rem;
-  margin: 30px;
+  margin: 50px 20px 20px 0;
 `;
 
 export const StyledSelectBottom = styled.select`
@@ -60,9 +60,9 @@ export const StyledSelectBottom = styled.select`
   background-color: #ecf0f3;
   border-radius: 8px;
   box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
-  margin-left: 10px;
   width: 200px;
   height: 35px;
+  margin-left: 5px;
 `;
 
 export const StyledSeclectTop = styled.select`
@@ -70,9 +70,9 @@ export const StyledSeclectTop = styled.select`
   border: none;
   outline: none;
   background-color: #ecf0f3;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: inset 2px 2px 4px #d1d9e6, inset -2px -2px 4px #f9f9f9;
-  margin-left: 10px;
-  width: 135px;
+  width: 140px;
   height: 35px;
+  margin-left: 5px;
 `;
