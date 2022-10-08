@@ -10,7 +10,8 @@ import {
 import ButtonRadio from "./ButtonRadio";
 import CakePiece from "../images/CakePiece.png";
 
-function DetailInfo() {
+
+function DetailInfo({ formData, setFormData }) {
   const labelStyles = {
     display: "flex",
     alignItems: "center",
@@ -23,29 +24,58 @@ function DetailInfo() {
 
         <StyledContainerRadio>
           <ButtonRadio>
-            <ButtonRadio.Input type="radio" value="a" name="taste" id="a" />
-            <label style={labelStyles} for="a">
+            <ButtonRadio.Input
+              type="radio"
+              value={formData.taste}
+              name="taste"
+              id="a"
+              onChange={(e) => {
+                setFormData({ ...formData, taste: e.target.value });
+              }}
+            />
+            <label style={labelStyles} htmlFor="a">
               <ButtonRadio.Indicator></ButtonRadio.Indicator>
               <ButtonRadio.Item>Chocolate</ButtonRadio.Item>
             </label>
           </ButtonRadio>
           <ButtonRadio>
-            <ButtonRadio.Input type="radio" value="b" name="taste" id="b" />
-            <label style={labelStyles} for="b">
+            <ButtonRadio.Input
+              type="radio"
+              value={formData.taste}
+              name="taste"
+              id="b"
+              onChange={(e) => {
+                setFormData({ ...formData, taste: e.target.value });
+              }}
+            />
+            <label style={labelStyles} htmlFor="b">
               <ButtonRadio.Indicator></ButtonRadio.Indicator>
               <ButtonRadio.Item>Vanilla</ButtonRadio.Item>
             </label>
           </ButtonRadio>
           <ButtonRadio>
-            <ButtonRadio.Input type="radio" value="c" name="taste" id="c" />
-            <label style={labelStyles} for="c">
+            <ButtonRadio.Input
+              type="radio"
+              value={formData.taste}
+              name="taste"
+              id="c"
+              onChange={(e) => {
+                setFormData({ ...formData, taste: e.target.value });
+              }}
+            />
+            <label style={labelStyles} htmlFor="c">
               <ButtonRadio.Indicator></ButtonRadio.Indicator>
               <ButtonRadio.Item>Strawberry</ButtonRadio.Item>
             </label>
           </ButtonRadio>
           <ButtonRadio>
-            <ButtonRadio.Input type="radio" value="d" name="taste" id="d" />
-            <label style={labelStyles} for="d">
+            <ButtonRadio.Input
+              type="radio"
+              value={formData.taste}
+              name="taste"
+              id="d"
+            />
+            <label style={labelStyles} htmlFor="d">
               <ButtonRadio.Indicator></ButtonRadio.Indicator>
               <ButtonRadio.Item>Raspberry</ButtonRadio.Item>
             </label>
@@ -56,11 +86,15 @@ function DetailInfo() {
           <ButtonRadio>
             <ButtonRadio.Input
               type="radio"
-              value="e"
+              value={formData.decoration}
               name="decoration"
               id="e"
+              onChange={(e) => {
+                console.log(e.target.value);
+                setFormData({ ...formData, decoration: e.target.value });
+              }}
             />
-            <label style={labelStyles} for="e">
+            <label style={labelStyles} htmlFor="e">
               <ButtonRadio.Indicator></ButtonRadio.Indicator>
               <ButtonRadio.Item>Fondant Icing</ButtonRadio.Item>
             </label>
@@ -68,11 +102,15 @@ function DetailInfo() {
           <ButtonRadio>
             <ButtonRadio.Input
               type="radio"
-              value="f"
+              value={formData.decoration}
               name="decoration"
               id="f"
+              onChange={(e) => {
+                console.log(e.target.value);
+                setFormData({ ...formData, decoration: e.target.value });
+              }}
             />
-            <label style={labelStyles} for="f">
+            <label style={labelStyles} htmlFor="f">
               <ButtonRadio.Indicator></ButtonRadio.Indicator>
               <ButtonRadio.Item>Royal Icing</ButtonRadio.Item>
             </label>

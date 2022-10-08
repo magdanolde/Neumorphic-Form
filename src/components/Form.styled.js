@@ -42,9 +42,15 @@ export const StyledButton = styled.button`
   border-radius: 15px;
   width: 150px;
   height: 35px;
-  margin-left: 5px;
+  margin-left: 8px;
   margin-top: 40px;
   color: white;
-  border-style: solid;
-  box-shadow: 8px 8px 16px #pink, -8px -8px 16px #f9f9f9;
+  border: solid pink 1px;
+  font-size: 1rem;
+  box-shadow: inset 6px 6px 11px #e0a9b3, inset -6px -6px 11px #ffd7e3;
+  &:hover {
+    background-color: pink;
+    box-shadow: none;
+    transition: 0.4s;
+  }
 `;

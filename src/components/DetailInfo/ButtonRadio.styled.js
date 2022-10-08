@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const DefaultButtonRadio = styled.p`
+const DefaultButtonRadio = styled.div`
   display: flex;
   width: 150px;
   align-items: center;

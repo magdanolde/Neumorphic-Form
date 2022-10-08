@@ -10,7 +10,7 @@ import {
   StyledSeclectTop,
 } from "./WelcomePage.styled";
 
-function WelcomePage() {
+function WelcomePage({ formData, setFormData }) {
   return (
     <StyledSection>
       <StyledDivContainerLeft>
@@ -21,7 +21,16 @@ function WelcomePage() {
         <StyledForm>
           <label>
             Choose occasion
-            <StyledSeclectTop>
+            <StyledSeclectTop
+              value={formData.selectValueOcassion}
+              onChange={(e) => {
+                console.log(e.target.value);
+                setFormData({
+                  ...formData,
+                  selectValueOcassion: e.target.value,
+                });
+              }}
+            >
               <option value=""></option>
               <option value="Wedding">Wedding</option>
               <option value="Birthsday">Birthsday</option>
@@ -33,11 +42,18 @@ function WelcomePage() {
         <StyledForm>
           <label>
             Choose size
-            <StyledSelectBottom>
+            <StyledSelectBottom
+              value={formData.selectValue}
+              onChange={(e) => {
+                console.log(e.target.value);
+                setFormData({ ...formData, selectValue: e.target.value });
+              }}
+            >
+              {" "}
               <option value=""></option>
-              <option value="Small">Small</option>
-              <option value="Medium">Medium</option>
-              <option value="Big">Big</option>
+              <option value="small">Small</option>
+              <option value="medium">Medium</option>
+              <option value="big">Big</option>
             </StyledSelectBottom>
           </label>
         </StyledForm>
