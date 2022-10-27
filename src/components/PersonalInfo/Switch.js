@@ -1,16 +1,19 @@
 import React from "react";
-import {
-  StyledInputSwitch,
-  StyledLabelSwitch,
-  StyledSpanSwitch,
-} from "./Switch.styled";
+import { StyledInputSwitch, StyledSpanSwitch } from "./Switch.styled";
 
-const Switch = () => {
+const Switch = ({ type, value, id, checked, name, ...other }) => {
   return (
-    <StyledLabelSwitch>
-      <StyledInputSwitch type="checkbox" />
+    <>
+      <StyledInputSwitch
+        type={type}
+        name={name}
+        value={value}
+        id={id}
+        checked={checked}
+        {...other}
+      />
       <StyledSpanSwitch />
-    </StyledLabelSwitch>
+    </>
   );
 };
 

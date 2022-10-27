@@ -26,9 +26,10 @@ function DetailInfo({ formData, setFormData }) {
           <ButtonRadio>
             <ButtonRadio.Input
               type="radio"
-              value={formData.taste}
+              value="Chocolate"
               name="taste"
               id="a"
+              checked={formData.taste === "Chocolate"}
               onChange={(e) => {
                 setFormData({ ...formData, taste: e.target.value });
               }}
@@ -41,9 +42,10 @@ function DetailInfo({ formData, setFormData }) {
           <ButtonRadio>
             <ButtonRadio.Input
               type="radio"
-              value={formData.taste}
+              value="Vanilla"
               name="taste"
               id="b"
+              checked={formData.taste === "Vanilla"}
               onChange={(e) => {
                 setFormData({ ...formData, taste: e.target.value });
               }}
@@ -56,9 +58,10 @@ function DetailInfo({ formData, setFormData }) {
           <ButtonRadio>
             <ButtonRadio.Input
               type="radio"
-              value={formData.taste}
+              value="Strawberry"
               name="taste"
               id="c"
+              checked={formData.taste === "Strawberry"}
               onChange={(e) => {
                 setFormData({ ...formData, taste: e.target.value });
               }}
@@ -71,9 +74,13 @@ function DetailInfo({ formData, setFormData }) {
           <ButtonRadio>
             <ButtonRadio.Input
               type="radio"
-              value={formData.taste}
+              value="Raspberry"
               name="taste"
               id="d"
+              checked={formData.taste === "Raspberry"}
+              onChange={(e) => {
+                setFormData({ ...formData, taste: e.target.value });
+              }}
             />
             <label style={labelStyles} htmlFor="d">
               <ButtonRadio.Indicator></ButtonRadio.Indicator>
@@ -86,8 +93,9 @@ function DetailInfo({ formData, setFormData }) {
           <ButtonRadio>
             <ButtonRadio.Input
               type="radio"
-              value={formData.decoration}
+              value="Fondant Icing"
               name="decoration"
+              checked={formData.decoration === "Fondant Icing"}
               id="e"
               onChange={(e) => {
                 console.log(e.target.value);
@@ -102,9 +110,10 @@ function DetailInfo({ formData, setFormData }) {
           <ButtonRadio>
             <ButtonRadio.Input
               type="radio"
-              value={formData.decoration}
+              value="Royal Icing"
               name="decoration"
               id="f"
+              checked={formData.decoration === "Royal Icing"}
               onChange={(e) => {
                 console.log(e.target.value);
                 setFormData({ ...formData, decoration: e.target.value });

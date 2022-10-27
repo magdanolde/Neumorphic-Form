@@ -9,8 +9,8 @@ import {
   StyledFooter,
   StyledButton,
 } from "./Form.styled";
-import { useContext } from "react";
 import { TasksContext } from "..//components/PersonalInfo/context";
+import FinalPage from "./FinalPage/FinalPage";
 
 function Form() {
   const [page, setPage] = useState(0);
@@ -18,62 +18,130 @@ function Form() {
     firstName: "",
     lastName: "",
     email: "",
-    tel: "",
+    telephone: "",
     date: "",
     decoration: "",
     taste: "",
     selectValue: "",
     selectValueOcassion: "",
+    accept: false,
   });
-  // const { validateInput } = useContext(TasksContext);
+  const [error, setError] = useState({
+    firstNameError: "",
+    lastNameError: "",
+    emailError: "",
+    dateError: "",
+    timeError: "",
+  });
 
-  const FormTitles = ["Welcome Page", "Detail Info", "Personal"];
+  const FormTitles = ["Welcome Page", "Detail Info", "Personal", "Final"];
 
-  const displayPage = () => {
-    if (page === 0) {
-      return <WelcomePage formData={formData} setFormData={setFormData} />;
-    } else if (page === 1) {
-      return <DetailInfo formData={formData} setFormData={setFormData} />;
-    } else {
-      return <PersonalInfo formData={formData} setFormData={setFormData} />;
+  const pages = [WelcomePage, DetailInfo, PersonalInfo, FinalPage];
+  const Component = pages[page];
+
+  const validateInput = () => {
+    let firstNameError = "";
+    let lastNameError = "";
+    let emailError = "";
+    let telError = "";
+    let dateError = "";
+    const regexdate = /^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$/;
+    const regexphone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+    if (formData.firstName.length < 2) {
+      firstNameError = "Minimum two signs are required";
     }
+    if (formData.lastName.length < 2) {
+      lastNameError = "Minimum two signs are required";
+    }
+    if (!formData.email.includes("@")) {
+      emailError = "Invalid email";
+    }
+    if (!regexphone.test(formData.telephone)) {
+      telError = "Invalid telephone format";
+    }
+    if (!regexdate.test(formData.date)) {
+      dateError = "Invalid time format";
+    }
+    if (
+      firstNameError ||
+      lastNameError ||
+      emailError ||
+      telError ||
+      dateError
+    ) {
+      setError({
+        firstNameError,
+        lastNameError,
+        emailError,
+        telError,
+        dateError,
+      });
+      return false;
+    }
+    return true;
   };
+
   return (
     <>
-      <StyledSection>
-        <StyledProgressBar>
-          <StyledProgressBarInside
-            style={{
-              width: page === 0 ? "33.3%" : page == 1 ? "66.6%" : "99%",
-            }}
-          ></StyledProgressBarInside>
-        </StyledProgressBar>
-        <div>
-          <div>{displayPage()}</div>
-          <StyledFooter>
-            <StyledButton
-              disabled={page === 0}
-              onClick={() => {
-                setPage((currPage) => currPage - 1);
+      <TasksContext.Provider
+        value={{
+          error,
+        }}
+      >
+        <StyledSection>
+          <StyledProgressBar>
+            <StyledProgressBarInside
+              style={{
+                width:
+                  page === 0
+                    ? "25%"
+                    : page === 1
+                    ? "50%"
+                    : page === 2
+                    ? "75%"
+                    : "99%",
               }}
-            >
-              PREV
-            </StyledButton>
-            <StyledButton
-              onClick={() => {
-                // const isValid = validateInput();
-                if (page === FormTitles.length - 1) {
-                  alert("You successfully submitted the form");
-                } else {
-                  setPage((currPage) => currPage + 1);
+            ></StyledProgressBarInside>
+          </StyledProgressBar>
+          <div>
+            <Component setFormData={setFormData} formData={formData} />
+            <StyledFooter>
+              <StyledButton
+                style={
+                  page === FormTitles.length - 1 ||
+                  page === FormTitles.length - 4
+                    ? { display: "none" }
+                    : { display: "block" }
                 }
-              }}
-            >
-              {page === FormTitles.length - 1 ? "SUBMIT" : "NEXT"}
-            </StyledButton>
-          </StyledFooter>
-        </div>
-      </StyledSection>
+                onClick={() => {
+                  setPage((currPage) => currPage - 1);
+                }}
+              >
+                PREV
+              </StyledButton>
+              <StyledButton
+                style={
+                  page === FormTitles.length - 1
+                    ? { display: "none" }
+                    : { display: "block" }
+                }
+                onClick={() => {
+                  if (page === 2) {
+                    const isValid = validateInput();
+                    if (isValid) {
+                      setPage((currPage) => currPage + 1);
+                    }
+                  } else {
+                    setPage((currPage) => currPage + 1);
+                  }
+                }}
+              >
+                {page === FormTitles.length - 2 ? "SUBMIT" : "NEXT"}
+              </StyledButton>
+            </StyledFooter>
+          </div>
+        </StyledSection>
+      </TasksContext.Provider>
     </>
   );
 }

@@ -38,6 +38,7 @@ export const StyledFooter = styled.div`
 `;
 
 export const StyledButton = styled.button`
+  display: block;
   background-color: pink;
   border-radius: 15px;
   width: 150px;

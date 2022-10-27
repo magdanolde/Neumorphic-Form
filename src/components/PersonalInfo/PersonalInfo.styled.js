@@ -48,3 +48,9 @@ export const StyledText = styled.p`
   font-size: 0.9rem;
   margin-right: 20px;
 `;
+
+export const StyledDivError = styled.div`
+  font-size: 0.7rem;
+  color: pink;
+`;
+
