@@ -96,6 +96,7 @@ function PersonalInfo({ formData, setFormData }) {
             />
           </SwitchLabel>
         </StyledContainerBottom>
+        <StyledDivError>{error.checkBoxError}</StyledDivError>
       </StyledContainer>
     </StyledSection>
   );

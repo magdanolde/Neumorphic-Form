@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ButtonRadioIndicator from "./ButtonRadioIndicator";
 import { DefaultButtonRadioIndicator } from "./ButtonRadioIndicator.styled";
 
 const DefaultButtonRadioInput = styled.input`

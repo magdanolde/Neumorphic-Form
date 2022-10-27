@@ -32,6 +32,7 @@ function Form() {
     emailError: "",
     dateError: "",
     timeError: "",
+    checkBoxError: "",
   });
 
   const FormTitles = ["Welcome Page", "Detail Info", "Personal", "Final"];
@@ -45,6 +46,7 @@ function Form() {
     let emailError = "";
     let telError = "";
     let dateError = "";
+    let checkBoxError = "";
     const regexdate = /^\d{4}\-(0?[1-9]|1[012])\-(0?[1-9]|[12][0-9]|3[01])$/;
     const regexphone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
     if (formData.firstName.length < 2) {
@@ -62,12 +64,16 @@ function Form() {
     if (!regexdate.test(formData.date)) {
       dateError = "Invalid time format";
     }
+    if (formData.accept === false) {
+      checkBoxError = "You have to accept terms and conditions";
+    }
     if (
       firstNameError ||
       lastNameError ||
       emailError ||
       telError ||
-      dateError
+      dateError ||
+      checkBoxError
     ) {
       setError({
         firstNameError,
@@ -75,6 +81,7 @@ function Form() {
         emailError,
         telError,
         dateError,
+        checkBoxError,
       });
       return false;
     }
