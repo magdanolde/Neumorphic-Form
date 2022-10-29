@@ -17,7 +17,6 @@ I came up with an idea of a pastry shop for this project. In my opinion the aest
 * The features and the form are placed on three different stages. If the form is filled in correctly, client is redirected to a "thank you" page.
 * Client can move easily through different stages, without loosing the entries
 * The progression is visualised by a progress bar
-* 
 
 ## :boom: PROJECT LIVE 
 
