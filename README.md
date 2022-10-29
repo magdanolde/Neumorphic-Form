@@ -10,7 +10,7 @@ To learn more about this trend, as well as get some inspiration, I read those ac
 
 I came up with an idea of a pastry shop for this project. In my opinion the aesthetics of a pasty shop or a bakery fit perfectly well to the neumorphism trend.
 
-###  FEATURES ###
+### :unlock: FEATURES ###
 
 * Client can customize its own cake by choosing different features.
 * At the end to finalize the order, client has to fill in a form. The form is validated.
