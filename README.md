@@ -44,6 +44,7 @@ Then, you may run webpack typing in the terminal:
 npm start
 
 ![Neo1](https://user-images.githubusercontent.com/83141358/198831853-2b26fc29-593b-4a69-bd7e-4644d70f8059.PNG)
+![Neo2](https://user-images.githubusercontent.com/83141358/198831946-c729824a-e69d-4995-9bd3-98916ade7078.PNG)
 
 
 ### 💻 TECHNOLOGIES
