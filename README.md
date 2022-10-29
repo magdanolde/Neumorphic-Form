@@ -43,7 +43,7 @@ Then, you may run webpack typing in the terminal:
 
 npm start
 
-https://github.com/magdanolde/Neumorphic-Form/issues/1#issue-1428245025
+![Neo1](https://user-images.githubusercontent.com/83141358/198831853-2b26fc29-593b-4a69-bd7e-4644d70f8059.PNG)
 
 
 ### 💻 TECHNOLOGIES
