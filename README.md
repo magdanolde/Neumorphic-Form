@@ -4,9 +4,9 @@ The goal of this project was to practice React Hooks and Styled Components. Howe
 
 To learn more about this trend, as well as get some inspiration, I read those acticles:
 
-    Neumorphism in user interfaces
-    Neumorphism: why it’s all the hype in UI design
-    Neumorphism. The Next Big Thing In UI Design?
+    [Neumorphism in user interfaces] (https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6)
+    [Neumorphism: why it’s all the hype in UI design] (https://www.justinmind.com/ui-design/neumorphism)
+    [Neumorphism. The Next Big Thing In UI Design?] (https://opengeekslab.com/blog/neumorphism-the-next-big-thing-ui-design/)
 
 I came up with an idea of a pastry shop for this project. In my opinion the aesthetics of a pasty shop or a bakery fit perfectly well to the neumorphism trend.
 
