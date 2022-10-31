@@ -1,4 +1,4 @@
-## PASTY SHOP 
+## PASTRY SHOP 
 
 ### :shell: PROJECT IN A NUTSHELL
 
