@@ -1,3 +1,5 @@
+### PASTY SHOP 
+
 ### :shell: PROJECT IN A NUTSHELL
 
 The goal of this project was to practice React Hooks and Styled Components. However, it was also a great opportunity to get to know the principles of neumorphism and put them into practice.
@@ -58,4 +60,6 @@ npm start
 ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
 ### 🤝 SPECIALTHANKS
-Thanks to my Mentor - devmentor.pl - for providing me with this task and for code review.
+Thanks to my Mentor - [devmentor.pl](https://devmentor.pl/) - for providing me with this task and for code review.
+
+If you have any questions feel free to get in touch with me (contact in the profile <a href="https://github.com/magdanolde").
