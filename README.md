@@ -1,4 +1,4 @@
-### PASTY SHOP 
+## PASTY SHOP 
 
 ### :shell: PROJECT IN A NUTSHELL
 
@@ -14,7 +14,7 @@ To learn more about this trend, as well as get some inspiration, I read those ac
 
 I came up with an idea of a pastry shop for this project. In my opinion the aesthetics of a pasty shop or a bakery fit perfectly well to the neumorphism trend.
 
-### :unlock: FEATURES ###
+### :unlock: FEATURES 
 
 * Client can customize its own cake by choosing different features.
 * At the end to finalize the order, client has to fill in a form. The form is validated.
@@ -22,7 +22,7 @@ I came up with an idea of a pastry shop for this project. In my opinion the aest
 * Client can move easily through different stages, without loosing the entries
 * The progression is visualised by a progress bar
 
-###  SOLUTIONS APPLIED IN THE PROJECT ###
+###  SOLUTIONS APPLIED IN THE PROJECT
 
 * Radio buttons & check-boxes
 * Dropdowns
@@ -31,7 +31,7 @@ I came up with an idea of a pastry shop for this project. In my opinion the aest
 * ES2015+ (arrow functions, destructuring, spread operator) 
 * useState React hook
 
-###  SOLUTIONS I STILL WANT TO ADD ###
+###  SOLUTIONS I STILL WANT TO ADD 
 
 * Mobile & tablet version
 
@@ -62,4 +62,4 @@ npm start
 ### 🤝 SPECIALTHANKS
 Thanks to my Mentor - [devmentor.pl](https://devmentor.pl/) - for providing me with this task and for code review.
 
-If you have any questions feel free to get in touch with me (contact in the profile <a href="https://github.com/magdanolde").
+If you have any questions feel free to get in touch with me (contact in the profile [readme](https://github.com/magdanolde).
