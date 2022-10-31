@@ -62,4 +62,4 @@ npm start
 ### 🤝 SPECIALTHANKS
 Thanks to my Mentor - [devmentor.pl](https://devmentor.pl/) - for providing me with this task and for code review.
 
-If you have any questions feel free to get in touch with me (contact in the profile [readme](https://github.com/magdanolde).
+If you have any questions feel free to get in touch with me (contact in the profile [readme](https://github.com/magdanolde)).
