@@ -24,8 +24,8 @@ I came up with an idea of a pastry shop for this project. In my opinion the aest
 
 ###  SOLUTIONS APPLIED IN THE PROJECT
 
-* Radio buttons & check-boxes
-* Dropdowns
+* radio buttons & check-boxes
+* dropdowns
 * css styles are created using styled-components incl. reset style/global styles 
 * majority of elements in line with the neumorphism trend
 * ES2015+ (arrow functions, destructuring, spread operator) 
