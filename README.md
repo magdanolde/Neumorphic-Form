@@ -1,53 +1,65 @@
-> ⭐ ***README** to coś więcej niż opis. Poprzez nie **pokazujesz swoje mocne strony** – swoją dokładność, sposób myślenia i podejście do rozwiązywania problemów. Niech Twoje README pokaże, że masz **świetne predyspozycje do rozwoju!***
-> 
-> 🎁 *Zacznij od razu. Skorzystaj z **[szablonu README i wskazówek](https://github.com/devmentor-pl/readme-template)**.* 
+## BAKERY 🧁
 
-&nbsp;
+### :shell: PROJECT IN A NUTSHELL
+
+The goal of this project was to practice React Hooks and Styled Components. However, it was also a great opportunity to get to know the principles of neumorphism and put them into practice.
+
+To learn more about this trend, as well as get some inspiration, I read those acticles:
+
+[Neumorphism in user interfaces](https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6)
+
+[Neumorphism: why it’s all the hype in UI design](https://www.justinmind.com/ui-design/neumorphism)
+
+[Neumorphism. The Next Big Thing In UI Design?](https://opengeekslab.com/blog/neumorphism-the-next-big-thing-ui-design/)
+
+I came up with an idea of a pastry shop for this project. In my opinion the aesthetics of a pasty shop or a bakery fit perfectly well to the neumorphism trend.
+
+### :unlock: FEATURES 
+
+* Client can customize its own cake by choosing different features.
+* At the end to finalize the order, client has to fill in a form. The form is validated.
+* The features and the form are placed on three different stages. If the form is filled in correctly, client is redirected to a "thank you" page.
+* Client can move easily through different stages, without loosing the entries
+* The progression is visualised by a progress bar
+
+###  SOLUTIONS APPLIED IN THE PROJECT
+
+* radio buttons & check-boxes
+* dropdowns
+* css styles are created using styled-components incl. reset style/global styles 
+* majority of elements in line with the neumorphism trend
+* ES2015+ (arrow functions, destructuring, spread operator) 
+* useState React hook
+
+###  SOLUTIONS I STILL WANT TO ADD 
+
+* Mobile & tablet version
+
+### :boom: PROJECT LIVE 
+
+The project uses node, npm, webpack and compiler babel as well as package JSON-server.
+
+Having them installed, type into the terminal:
+
+npm i
+
+Then, you may run webpack typing in the terminal:
+
+npm start
+
+![Neo1](https://user-images.githubusercontent.com/83141358/198831853-2b26fc29-593b-4a69-bd7e-4644d70f8059.PNG)
+![Neo2](https://user-images.githubusercontent.com/83141358/198831946-c729824a-e69d-4995-9bd3-98916ade7078.PNG)
 
 
-# Neumorfizm
+### 💻 TECHNOLOGIES
 
-Neumorfizm to pewien trend w projektowaniu, który opiera się na odpowiednim wykorzystaniu cieni.
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
-W tym projekcie Twoim zadaniem będzie utworzenie z pomocą Styled Components kilku komponentów zgodnych z tym trendem.
+### 🤝 SPECIALTHANKS
+Thanks to my Mentor - [devmentor.pl](https://devmentor.pl/) - for providing me with this task and for code review.
 
-Formularz powinien być rozbudowany, lecz to od Ciebie zależy, jakie elementy w nim zawrzesz.
-
-Zanim przejdziesz do implementowania, zapoznaj się z kilkoma artykułami na temat neumorfizmu:
-- [Neumorphism in user interfaces](https://uxdesign.cc/neumorphism-in-user-interfaces-b47cef3bf3a6) (jeśli wykorzystałeś darmowy limit, to wystarczy otworzyć tę stronę w trybie incognito)
-- [Neumorphism: why it’s all the hype in UI design](https://www.justinmind.com/blog/neumorphism-ui/)
-- [Neumorphism. The Next Big Thing In UI Design?](https://opengeekslab.com/blog/neumorphism-the-next-big-thing-ui-design/)
-
-## Komponenty
-
-Gdy zdecydujesz, z czego ma się składać Twój formularz, stwórz odpowiednie komponenty: pola tekstowe, listy rozwijane, checkboxy, buttony, paski postępu itd. Możesz skorzystać z podpowiedzi z punktu poniżej (Formularz).
-
-Po zapoznaniu się z podlinkowanymi artykułami wiesz już, na czym polega neumorfizm. Jeśli potrzebujesz dodatkowych wskazówek, to zachęcam Cię do skorzystania z [generatora kodu CSS](https://neumorphism.io/). Możesz również inspirować się [przykładami innych](https://bashooka.com/inspiration/neumorphism-ui-design-examples/).
-
-Jeśli masz własną koncepcję komponentów, to nie widzę przeszkód, abyś z niej skorzystał. Jeśli nie, to możesz się wzorować na poniższej grafice od [Emy Lascan](https://dribbble.com/shots/9527558-Freebie-Neumorphic-UX-UI-Elements).
-
-![](./example.png)
-
-## Formularz
-
-Kiedy będziesz mieć gotowe komponenty, zacznij budować swój formularz.
-
-Pamiętaj, aby w pełni prezentował on Twoje możliwości, np.:
-- składał się z trzech etapów (kroków, ekranów), po których można wygodnie się przemieszczać
-- posiadał rozwijaną listę implementowaną przez specjalne rozwiązanie, inne niż `select`
-- miał animowane elementy typu `chceckbox` czy `radio`
-- poziom wypełnienia pól prezentował przez pasek postępu
-- informował użytkownika od razu po wprowadzeniu błędnych danych.
-
-
-Jestem pewny, że ten projekt mocno zainteresuje Twojego przyszłego pracodawcę!
-
-
-PS Konfigurację środowiska zrób według własnego uznania.
-
-
-&nbsp;
-
-> ⭐ ***README** to coś więcej niż opis. Poprzez nie **pokazujesz swoje mocne strony** – swoją dokładność, sposób myślenia i podejście do rozwiązywania problemów. Niech Twoje README pokaże, że masz **świetne predyspozycje do rozwoju!***
-> 
-> 🎁 *Zacznij od razu. Skorzystaj z **[szablonu README i wskazówek](https://github.com/devmentor-pl/readme-template)**.* 
+If you have any questions feel free to get in touch with me (contact in the profile [readme](https://github.com/magdanolde)).
