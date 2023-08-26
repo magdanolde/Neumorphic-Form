@@ -37,7 +37,7 @@ I came up with an idea of a pastry shop for this project. In my opinion the aest
 
 ### :boom: PROJECT LIVE 
 
-![LIVE](https://neumorphic-form.netlify.app/)
+https://neumorphic-form.netlify.app
 
 The project uses node, npm, webpack and compiler babel as well as package JSON-server.
 
